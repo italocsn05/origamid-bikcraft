@@ -28,6 +28,25 @@
     color: var(--cor-02);
 }
 
+.primary-buttom.seta::after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url(../img/icones/seta.svg);
+    transition: transform 0.2s;
+}
+
+.primary-buttom.seta:hover::after{
+    transform: translateX(4px);
+}
+
+.primary-buttom.seta{
+    display: flex;
+    align-items: center;
+}
+
 .primary-buttom.secondary:hover{
     background: var(--cor-09);
 }
